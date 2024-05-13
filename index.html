@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>STEAM</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bxl-steam icon"> </i>
+        <div class="logo_name">STEAM</div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul class="nav-list">
+        <li>
+          <i class="bx bx-search"></i>
+          <input id="search-query" type="text" placeholder="Search..." />
+          <span class="tooltip">Search</span>
+        </li>
+
+        <div id="topics-btn" class="btn">
+          <li>
+            <a href="#">
+              <i class="bx bxs-book-bookmark"></i>
+              <span class="links_name">TOPIC</span>
+            </a>
+            <span class="tooltip">TOPIC</span>
+          </li>
+        </div>
+        <li>
+          <a href="#">
+            <i class="bx bx-book-reader"></i>
+            <span class="links_name">Category</span>
+          </a>
+          <span class="tooltip">Category</span>
+        </li>
+        <div id="topics-list">
+          <ul id="ul-topics-list">
+            <div id="topiclist"></div>
+          </ul>
+        </div>
+      </ul>
+    </div>
+    <section class="home-section">
+      <div class="text">DANH SÁCH TRÒ CHƠI</div>
+      <div class="game-list" id="ul-games-list">
+        <div class="game">
+          <img
+            src="https://www.gamosaurus.com/wp-content/uploads/calendrier/novembre-2020/vignette-mmorpg-jeux-confinement.jpg"
+            alt="Game 1"
+          />
+          <h3>Game 1</h3>
+        </div>
+        <div class="game">
+          <img
+            src="https://cms.dailysocial.id/wp-content/uploads/2021/07/1391688bf1d5a3c9493c257493261c5a_game-crossplay-pc-mobile.jpg"
+            alt="Game 2"
+          />
+          <h3>Game 2</h3>
+        </div>
+        <div class="game">
+          <img
+            src="https://gamefever.co.id/wp-content/uploads/2020/07/WEB_JULY-960x540.jpg"
+            alt="Game 3"
+          />
+          <h3>Game 3</h3>
+        </div>
+      </div>
+      <div class="pagination">
+        <ul>
+          <!--pages or li are comes from javascript -->
+        </ul>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
